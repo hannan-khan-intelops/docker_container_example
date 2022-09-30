@@ -1,7 +1,7 @@
 import pandas as pd
 
 
-def fizzbuzz(n: int = 100) -> List():
+def fizzbuzz(n: int = 100) -> list():
 	"""
 	Goes through n numbers and sees if they are divisible by
 	3, 5, or both.
@@ -17,9 +17,10 @@ def fizzbuzz(n: int = 100) -> List():
 			output.append("Buzz")
 		else:
 			output.append(str(i))
+	return output
 
 
 if __name__ == '__main__':
-	df = pd.Dataframe()
+	df = pd.DataFrame()
 	df['FizzBuzz'] = fizzbuzz()
-	print(df.head())
+	print(df)
