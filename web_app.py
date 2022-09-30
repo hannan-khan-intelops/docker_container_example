@@ -6,6 +6,9 @@ app = Flask('docker_example_2')
 
 @app.route('/')
 def home():
+	""" Creates a dataframe, and populates the results from
+	fizzbuzz().
+	Returns a nice html string of the dataframe."""
 	df = pd.DataFrame()
 	df['FizzBuzz'] = a.fizzbuzz()
-	return str(df.head())
+	return str(df.to_html())

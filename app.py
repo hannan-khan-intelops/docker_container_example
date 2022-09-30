@@ -21,6 +21,9 @@ def fizzbuzz(n: int = 100) -> list():
 
 
 if __name__ == '__main__':
+	""" Creates a dataframe and populates a column
+	with the results of fizzbuzz()."""
+
 	df = pd.DataFrame()
 	df['FizzBuzz'] = fizzbuzz()
 	print(df)
