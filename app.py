@@ -1,7 +1,7 @@
-import pandas as pd
-
 """This is a sample app for the docker container example.
 It calculates the fizzbuzz, and thats it."""
+
+import pandas as pd
 
 
 def fizzbuzz(max_n: int = 100) -> []:
@@ -24,8 +24,8 @@ def fizzbuzz(max_n: int = 100) -> []:
 
 
 if __name__ == '__main__':
-    """ Creates a dataframe and populates a column
-    with the results of fizzbuzz()."""
+    # Creates a dataframe and populates a column
+    # with the results of fizzbuzz().
 
     df = pd.DataFrame()
     df['FizzBuzz'] = fizzbuzz()
