@@ -6,13 +6,13 @@ import pandas as pd
 
 import app as a
 
-app = Flask('docker_example_2')
+app = Flask("docker_example_2")
 
 
-@app.route('/')
+@app.route("/")
 def home():
     """Creates a dataframe, and populates the results from fizzbuzz().
     Returns a nice html string of the dataframe."""
     fizzbuzz_df = pd.DataFrame()
-    fizzbuzz_df['FizzBuzz'] = a.fizzbuzz()
+    fizzbuzz_df["FizzBuzz"] = a.fizzbuzz()
     return str(fizzbuzz_df.to_html())
