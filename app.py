@@ -1,5 +1,8 @@
 import pandas as pd
 
+"""This is a sample app for the docker container example.
+It calculates the fizzbuzz, and thats it."""
+
 
 def fizzbuzz(n: int = 100) -> list():
     """
