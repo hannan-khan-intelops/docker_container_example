@@ -23,10 +23,10 @@ def fizzbuzz(max_n: int = 100) -> []:
     return output
 
 
-if __name__ == '__main__':
+if __name__ == "__main__":
     # Creates a dataframe and populates a column
     # with the results of fizzbuzz().
 
     df = pd.DataFrame()
-    df['FizzBuzz'] = fizzbuzz()
+    df["FizzBuzz"] = fizzbuzz()
     print(df)
