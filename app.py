@@ -4,14 +4,14 @@ import pandas as pd
 It calculates the fizzbuzz, and thats it."""
 
 
-def fizzbuzz(n: int = 100) -> list():
+def fizzbuzz(max_n: int = 100) -> []:
     """
     Goes through n numbers and sees if they are divisible by
     3, 5, or both.
     Returns a list of the results.
     """
     output = []
-    for i in range(n):
+    for i in range(max_n):
         if i % 15 == 0:
             output.append("FizzBuzz")
         elif i % 3 == 0:
