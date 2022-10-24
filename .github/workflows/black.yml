@@ -7,4 +7,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
+<<<<<<< HEAD
       - uses: psf/black@stable
+=======
+      - uses: psf/black@stable
+>>>>>>> 49185a3155763cc1d2b4e6e7c69e9e94cac24f63
